@@ -1,0 +1,389 @@
+@import 'design';
+@import 'navigation';
+@import 'forms';
+
+
+.page-section { padding: 6vh 0; display: flex; flex-wrap: nowrap; justify-content: center; align-items: center; background-size: cover;
+  &.homepage-content-section { background: $white url('../images/homepage-bg.jpg') no-repeat center top;  }
+  &.vision-content-section   { background: $white url('../images/vision-bg.jpg') no-repeat center top; }
+  &.setting-content-section  { background: $white url('../images/setting-bg.jpg') no-repeat center top; }
+  &.homes-content-section    { background: $white url('../images/homes-bg.jpg') no-repeat center top; }
+  &.builder-content-section  { background: $white url('../images/builder-bg.jpg') no-repeat center top; }
+  &.lifestyle-content-section { background: $white url('../images/lifestyle-bg.jpg') no-repeat center top; }
+  &.location-content-section { background: $white url('../images/location-bg.jpg') no-repeat center top; }
+  &.news-content-section { background: $white url('../images/news-bg.jpg') no-repeat center top; }
+  &.homepage-subsection,
+  &.setting-subsection { background: $white url('../images/whitewood-bg.jpg') repeat-y center top; display: flex; flex-wrap: wrap; position: relative; padding-top: 0;
+    justify-content: center; align-items: flex-start;
+    .orange-bg { background: $orange url('../images/orangewood-bg.gif') no-repeat center top; height: 150px; width: 100%; position: absolute; top: 0; }
+    .homepage-sub-content { flex-basis: 95%; display: flex; justify-content: center; z-index: 1; margin-top: 50px;
+      .aligncenter { margin: 0 auto; }
+    }
+  }
+
+  &.page-subsection {
+    &.vision-subsection { background: transparent url('../images/wood-fence.jpg') no-repeat center top; background-size: contain;
+      .page-sub-content { display: flex; justify-content: center; align-items: center; flex-basis: 80%; flex-wrap: wrap;
+        .page-sub-image { flex-basis: 95%; float: none; margin: 0;
+          .alignleft { margin-top: 0px; }
+        }
+        .page-sub-text { align-self: flex-end; font-size: 2em; font-family: 'joanna-bolditalic', serif; color: $dkbrown; flex-basis: 80%;
+          p { line-height: 1.85em; text-align: center; width: 100%; }
+        }
+      }
+    }
+  }
+
+  &.setting-map { padding: 0; }
+
+  &.setting-subsection { padding-top: 3vh;
+    .neighborhoods { display: flex; flex-wrap: wrap; justify-content: center;
+      .neighborhood { display: flex; flex-wrap: wrap; flex-basis: 90%;
+        .page-sub-image { position: relative;
+          .btn { position: absolute; bottom: -5px; left: 50%; transform: translateX(-50%); z-index: 1; font-size: 1.1em; padding: 8px 20px; }
+        }
+        .neighborhood-details { margin-top: 20px; text-align: center; font-size: 1em; }
+      }
+    }
+
+  }
+
+  &.homes-content-section { flex-wrap: wrap;
+    .builders-section {
+      .builder-container { display: flex; flex-wrap: wrap; flex-basis: 90%; justify-content: center;
+        .builder { display: flex; flex-wrap: wrap; justify-content: center; margin-bottom: 30px;
+          .btn { transform: translateY(-10px); font-size: 1.1em; padding-left: 20px; padding-right: 20px; }
+        }
+      }
+    }
+  }
+
+  &.builder-content-section { flex-wrap: wrap;
+    .builder-model-container { display: flex; flex-basis: 100%; justify-content: center;
+      .model-container { display: flex; flex-wrap: wrap; justify-content: center;
+        .model { text-align: center; margin-bottom: 40px;
+          img { margin-bottom: 20px; }
+          .model-name,
+          .model-details { font-size: 1em; margin-bottom: 8px;  }
+          .model-name {
+            strong { font-size: 1.25em; text-transform: uppercase; font-family: 'mr-eaves-xl-modern'; color: $orange; }
+          }
+        }
+      }
+    }
+  }
+
+  &.homes-subhero { padding: 0 !important;
+    figure { margin: 0; }
+  }
+
+  &.lifestyle-content-section { flex-wrap: wrap; position: relative; padding-bottom: 0;
+    .lifestyle-subsection { flex-basis: 100%; position: relative; padding-top: 0; display: flex; flex-wrap: wrap; padding-top: 0; justify-content: center;
+      align-items: flex-start; background: $white url('../images/lifestyle-bg.jpg') no-repeat center bottom;
+      .orange-bg { background: $orange url('../images/orangewood-bg.gif') no-repeat center top; height: 150px; width: 100%; position: absolute; top: 0; }
+      .homepage-sub-content { flex-basis: 65%; display: flex; justify-content: center; z-index: 1; margin-top: 30px;
+        .aligncenter { margin: 0 auto 30px; }
+        .shadow { box-shadow: 0 0 8px rgba($black,.5); }
+      }
+    }
+  }
+
+  &.location-information { padding-bottom: 0;
+    .stats-container { display: flex; flex-basis: 80%; flex-wrap: wrap; justify-content: center;
+      .stat { flex-basis: 65%; text-align: center; margin-bottom: 45px;
+        .counting { font-family: 'insignia'; font-size: 4em; margin-bottom: 15px; }
+        h4 { color: $white; font-size: 1em; font-weight: normal; }
+        &:last-child { margin-bottom: 0; }
+      }
+    }
+  }
+
+  &.news-content-section { flex-wrap: wrap;
+    .news-container { display: flex; flex-wrap: wrap; justify-content: center;
+      .news-article { margin-bottom: 30px; text-align: center; flex-basis: 95%;
+        .post-image { margin-bottom: 15px; }
+        .article-date { font-size: 1.2em; margin-bottom: 8px; }
+        .article-title { font-family: 'mr-eaves-xl-modern'; text-transform: uppercase; margin-bottom: 8px; }
+      }
+    }
+  }
+
+  .page-content { text-align: center; flex-basis: 80%;
+    h2 { font-size: 36px; line-height: 40px; }
+    h3 { font-size: 28px; font-family: 'mr-eaves-xl-modern', sans-serif; color: $orange; text-transform: uppercase; }
+    .wagon-wheel { max-width: 150px; }
+    p  { font-size: 1.1em; line-height: 1.85em; }
+  }
+}
+
+.footer { display: flex; flex-wrap: wrap; justify-content: center; padding: 4vh 0 0;
+  .footer-contents  { flex-basis: 70%; display: flex; flex-wrap: wrap; justify-content: space-between;
+    .footer-contact { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; text-align: center; flex-grow: 1;
+      flex-basis: 100%;
+      div.wpcf7 { width: 100%;
+        h2.orange-txt { font-family: 'mr-eaves-xl-modern', sans-serif; font-weight: 400; font-size: 1.75em; text-transform: uppercase; }
+        p { font-size: 1.1em; }
+        .form-group { display: flex; flex-wrap: wrap; justify-content: space-between; margin: 0;
+          .one-half { flex-basis: 100%; margin-bottom: 20px;
+            .form-control { border-radius: 0; font-family: 'mr-eaves-xl-modern', sans-serif; font-weight: 700; color: $dkbrown; text-transform: uppercase;
+              &::placeholder { color: $dkbrown; }
+            }
+          }
+          &.radio-group { font-size: 1em;
+            .one-full { display: flex; flex-basis: 100%; flex-wrap: wrap; justify-content: center; align-items: center; margin-bottom: 20px;
+              span.radio-label { width: 100%; }
+              span  { padding-right: 15px; flex-grow: 1; }
+              label { line-height: 1.5em; }
+            }
+          }
+        }
+      }
+      .btn { padding: 8px 20px; font-size: 1em; }
+    }
+    .footer-directions-container { text-align: center; padding: 1vh 0; text-align: center; font-size: 1.2em; font-family: 'mr-eaves-xl-modern';
+      font-weight: 400; flex-basis: 100%; display: flex; flex-wrap: wrap; justify-content: space-between;
+      .footer-directions { flex-grow: 1; flex-basis: 100%; text-transform: uppercase;
+        em {
+          strong { font-family: 'mr-eaves-xl-modern'; font-style: italic; font-weight: 700; }
+        }
+      }
+    }
+  }
+  .footer-message { flex-basis: 100%; display: flex; flex-wrap: wrap; justify-content: center; padding: 2vh 0 1vh;
+    background: transparent url('../images/footerwood-bg.jpg') no-repeat center top; text-align: center;
+    .white-txt,
+    .copyright { flex-basis: 100%; flex-grow: 1; }
+    .white-txt { font-family: 'mr-eaves-xl-modern'; text-transform: uppercase; font-size: 1.25em; font-weight: 700; text-shadow: 0 0 8px rgba($black, .5); }
+    .copyright { font-size: .95em; text-shadow: 0 0 8px rgba($black, .5); font-weight: bold; }
+  }
+}
+
+
+/*
+Extra small devices (portrait phones, less than 576px)
+No media query...Bootstrap default
+*/
+
+/*** SMALL DEVICES : Landscape phones, 576px + ***/
+@media (min-width: 576px){
+
+}
+
+/*** IPHONE X : Landscape ***/
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+}
+
+/*** MEDIUM DEVICES : Tablets, 768px + ***/
+@media (min-width: 768px){
+
+}
+
+/*** LARGE DEVICES : Desktops, 992px and up ***/
+@media (min-width: 992px){
+  .page-section { padding: 6vh 0; display: flex; flex-wrap: nowrap; justify-content: center; align-items: center;
+    &.homepage-subsection { display: flex; flex-wrap: wrap; position: relative;
+      padding-top: 0; justify-content: center; align-items: flex-start;
+      .orange-bg { background: $orange url('../images/orangewood-bg.gif') no-repeat center top; height: 500px; width: 100%; position: absolute; top: 0; }
+      .homepage-sub-content { flex-basis: 70%; display: flex; justify-content: center; z-index: 1; margin-top: 100px;
+        .aligncenter { margin: 0 auto; }
+      }
+    }
+
+    &.page-subsection {
+      &.vision-subsection {
+        .page-sub-content { display: flex; justify-content: space-between; align-items: center; flex-basis: 70%;
+          .page-sub-image { flex-basis: 50%; float: none; margin: 0;
+            .alignleft { margin-top: 50px; }
+          }
+          .page-sub-text { align-self: flex-end; font-size: 2em; font-family: 'joanna-bolditalic', serif; color: $dkbrown; flex-basis: 40%;
+            p { line-height: 1.85em; text-align: center; }
+          }
+        }
+      }
+    }
+
+    .page-content { text-align: center; flex-basis: 45%;
+      h2 { font-size: 48px; line-height: 52px; }
+      h3 { font-size: 28px; font-family: 'mr-eaves-xl-modern', sans-serif; color: $orange; text-transform: uppercase; }
+      .wagon-wheel { max-width: 150px; }
+      p  { font-size: 1.1em; line-height: 1.85em; }
+    }
+
+    &.setting-subsection { padding-top: 6vh;
+      .neighborhoods { display: flex; flex-wrap: nowrap; justify-content: space-between; flex-basis: 80%;
+        .neighborhood { display: flex; flex-wrap: wrap; flex-basis: 32%;
+          .page-sub-image { position: relative;
+            .btn { position: absolute; bottom: -5px; left: 50%; transform: translateX(-50%); z-index: 1; font-size: 1.1em; padding: 8px 20px; }
+          }
+          .neighborhood-details { margin-top: 20px; text-align: center; font-size: 1em; padding: 0 20px; }
+        }
+      }
+    }
+
+    &.homes-content-section {
+      .page-subcontent-container { width: 100%; display: flex; flex-wrap: wrap; justify-content: center;
+        .page-subcontent { padding: 5vh 0 2.5vh; text-align: center; border-top: 2px solid $orange; flex-basis: 45%;
+          h3 { color: $orange; font-family: 'mr-eaves-xl-modern'; font-size: 1.8em; text-transform: uppercase; }
+          p  { font-size: 1.1em; }
+        }
+      }
+      .builders-section { justify-content: center; display: flex; padding-top: 45px;
+        .builder-container { display: flex; flex-wrap: nowrap; flex-basis: 80%; width: 80%; justify-content: space-between;
+          .builder { display: flex; flex-wrap: wrap; justify-content: center; margin-bottom: 30px; flex-basis: 48%;
+            .btn { transform: translateY(-10px); font-size: 1.1em; padding-left: 20px; padding-right: 20px; }
+          }
+        }
+      }
+    }
+
+    &.builder-content-section { flex-wrap: wrap;
+      .builder-model-container { display: flex; flex-basis: 100%; justify-content: center;
+        .model-container { display: flex; flex-wrap: wrap; justify-content: space-between; flex-basis: 80%;
+          .model { text-align: center; margin-bottom: 40px; flex-basis: 48%;
+            img { margin-bottom: 20px; }
+            .model-name,
+            .model-details { font-size: 1em; margin-bottom: 8px;  }
+            .model-name {
+              strong { font-size: 1.25em; text-transform: uppercase; font-family: 'mr-eaves-xl-modern'; color: $orange; }
+            }
+          }
+        }
+      }
+    }
+
+    &.lifestyle-content-section { flex-wrap: wrap; position: relative;
+      .lifestyle-subsection { flex-basis: 100%; position: relative; padding-top: 0; display: flex; flex-wrap: wrap; padding-top: 0; justify-content: center;
+        align-items: flex-start;
+        .orange-bg { background: $orange url('../images/orangewood-bg.gif') no-repeat center top; height: 500px; width: 100%; position: absolute; top: 0; }
+        .homepage-sub-content { flex-basis: 50%; display: flex; justify-content: center; z-index: 1; margin-top: 60px;
+          .aligncenter { margin: 0 auto 45px; }
+          .shadow { box-shadow: 0 0 8px rgba($black,.5); }
+        }
+      }
+    }
+
+    &.location-information { padding-bottom: 0;
+      .stats-container { display: flex; flex-basis: 80%; flex-wrap: nowrap; justify-content: space-between;
+        .stat { flex-basis: 15%; text-align: center; margin-bottom: 15px;
+          .counting { font-family: 'insignia'; font-size: 5em; margin-bottom: 15px; }
+          h4 { color: $white; font-size: .95em; font-weight: normal; padding: 0 6.5%; line-height: 1.35em; }
+          &:last-child { margin-bottom: 0; }
+        }
+      }
+    }
+
+    &.location-map-container { padding: 0; position: relative;
+      #map { min-height: 750px; width: 100%; }
+      .map-menu { position: absolute; right: 10px; top: 10px; font-family: 'mr-eaves-xl-modern'; font-weight: 600; text-transform: uppercase;
+        display: flex; flex-wrap: wrap; justify-content: flex-start; width: 275px;
+        .menu-link { flex-grow: 1; flex-basis: 100%; color: $white; background: $dkorange; padding: 12px; display: flex; flex-wrap: nowrap; align-items: center; }
+        #grocery-btn {
+          &::before { content: ''; display: inline-flex; height: 32px; width: 32px; margin-right: 10px;
+            background: url('../images/map-icons/grocery.svg') no-repeat left top; background-size: contain; }
+        }
+        #coffee-btn {
+          &::before { content: ''; display: inline-flex; height: 32px; width: 32px; margin-right: 10px;
+            background: url('../images/map-icons/coffee.svg') no-repeat left top; background-size: contain; }
+        }
+        #shopping-btn {
+          &::before { content: ''; display: inline-flex; height: 32px; width: 32px; margin-right: 10px;
+            background: url('../images/map-icons/shopping.svg') no-repeat left top; background-size: contain; }
+        }
+        #dining-btn {
+          &::before { content: ''; display: inline-flex; height: 32px; width: 32px; margin-right: 10px;
+            background: url('../images/map-icons/dining.svg') no-repeat left top; background-size: contain; }
+        }
+        #trails-btn {
+          &::before { content: ''; display: inline-flex; height: 32px; width: 32px; margin-right: 10px;
+            background: url('../images/map-icons/trails.svg') no-repeat left top; background-size: contain; }
+        }
+        #parks-btn {
+          &::before { content: ''; display: inline-flex; height: 32px; width: 32px; margin-right: 10px;
+            background: url('../images/map-icons/parks.svg') no-repeat left top; background-size: contain; }
+        }
+        #schools-btn {
+          &::before { content: ''; display: inline-flex; height: 32px; width: 32px; margin-right: 10px;
+            background: url('../images/map-icons/schools.svg') no-repeat left top; background-size: contain; }
+        }
+        #medical-btn {
+          &::before { content: ''; display: inline-flex; height: 32px; width: 32px; margin-right: 10px;
+            background: url('../images/map-icons/hospitals.svg') no-repeat left top; background-size: contain; }
+        }
+      }
+    }
+
+    &.news-content-section { flex-wrap: wrap;
+      .news-container { display: flex; flex-wrap: wrap; justify-content: space-between; flex-basis: 80%;
+        .news-article { margin-bottom: 30px; text-align: center; flex-basis: 48%;
+          .post-image { margin-bottom: 15px; }
+          .article-date { font-size: 1.2em; margin-bottom: 8px; }
+          .article-title { font-family: 'mr-eaves-xl-modern'; text-transform: uppercase; margin-bottom: 8px;
+            a { color: $orange; }
+          }
+          a { color: $orange; }
+        }
+        .news-article-single { flex-basis: 100%;
+          .post-image { margin-bottom: 15px; }
+          a { color: $orange; }
+        }
+      }
+    }
+  }
+
+
+  .footer { display: flex; flex-wrap: wrap; justify-content: center; padding: 4vh 0 0;
+    .footer-contents  { flex-basis: 70%; display: flex; flex-wrap: wrap; justify-content: space-between;
+      .footer-contact { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; text-align: center; flex-grow: 1;
+        flex-basis: 100%;
+        div.wpcf7 { width: 100%;
+          h2.orange-txt { font-family: 'mr-eaves-xl-modern', sans-serif; font-weight: 400; font-size: 1.75em; text-transform: uppercase; }
+          p { font-size: 1.1em; }
+          .form-group { display: flex; flex-wrap: nowrap; justify-content: space-between; margin: 0 0 20px;
+            .one-half { flex-basis: 48.5%; margin-bottom: 0;
+              .form-control { border-radius: 0; font-family: 'mr-eaves-xl-modern', sans-serif; font-weight: 700; color: $dkbrown;
+                text-transform: uppercase;
+                &::placeholder { color: $dkbrown; }
+              }
+            }
+            &.radio-group { font-size: 1.1em;
+              .one-full { display: flex; flex-basis: 100%; flex-wrap: nowrap; justify-content: center; align-items: center;
+                span.radio-label { width: auto; }
+                span  { padding-right: 15px; flex-grow: 0; }
+                label { line-height: 1.5em; }
+              }
+            }
+          }
+        }
+        .btn { padding: 8px 20px; font-size: 1em; }
+      }
+      .footer-directions-container { text-align: center; padding: 1vh 0; text-align: center; font-size: 1.2em; font-family: 'mr-eaves-xl-modern';
+        font-weight: 400; flex-basis: 100%; display: flex; flex-wrap: wrap; justify-content: space-between;
+        .footer-directions { flex-grow: 1; flex-basis: 100%; text-transform: uppercase;
+          em {
+            strong { font-family: 'mr-eaves-xl-modern'; font-style: italic; font-weight: 700; }
+          }
+        }
+      }
+    }
+    .footer-message { flex-basis: 100%; display: flex; flex-wrap: wrap; justify-content: center; padding: 2vh 0 1vh; text-align: center;
+      .white-txt,
+      .copyright { flex-basis: 100%; flex-grow: 1; }
+      .white-txt { font-family: 'mr-eaves-xl-modern'; text-transform: uppercase; font-size: 1.5em; font-weight: 700; text-shadow: 0 0 8px rgba($black, .5); }
+      .copyright { font-size: 1.1em; text-shadow: 0 0 8px rgba($black, .5); font-weight: bold; }
+    }
+  }
+}
+
+/*** EXTRA LARGE DEVICES : Large Desktops, 1200px + ***/
+@media (min-width: 1200px){
+
+}
+
+
+/*
+:::::::::: CUSTOM MEDIA QUERIES IF NEEDED ::::::::::
+
+
+*/

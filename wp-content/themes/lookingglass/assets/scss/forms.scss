@@ -1,0 +1,15 @@
+input[type=radio]:not(old),
+input[type=checkbox]:not(old)		{ width: 2em; margin: 0; padding: 0; font-size: 1em; opacity: 0; border-radius: 2em; }
+input[type=checkbox]:not(old) + label,
+input[type=radio]:not(old) + label 	{ display: inline-block; margin: -2px 15px 0 -35px;  line-height: 1.65em; }
+input[type=radio]:not(old) + label > span { display: inline-block; width: 1.1em; height: 1.1em; margin: .25em .5em .25em .25em; border: .0625em solid $white;
+	background: transparent; vertical-align: bottom; border-radius: 2em; }
+input[type=checkbox]:not(old) + label > span { display: inline-block; width: 1.1em; height: 1.1em; margin: .25em .5em .25em .25em; border: .0625em solid $white;
+	background: linear-gradient(rgb(240,240,240), rgb(224,224,224)); vertical-align: bottom; border-radius: .125em; }
+input[type=checkbox]:not(old):checked + label > span,
+input[type=radio   ]:not(old):checked + label > span { background: $orange; border-color: $orange; }
+input[type=checkbox]:not(old):checked + label > span:before { content: ''; display: block; width: 1em; color: $orange; font-size: .875em; line-height: 1em; text-align: center; text-shadow: 0 0 .714em rgba($black,.4); }
+input[type=radio]:not(old):checked + label > span > span { display: block; width: 1em; height: 1em; margin: 0; border: .0625em solid $orange; border-radius: 2em;
+	background: $orange; }
+input[type=checkbox]:not(old):checked + label > span > span { display: block; width: 1em; height: 1em; margin: 0; border: .0625em solid $orange; border-radius: .125em;
+	background: $orange; }

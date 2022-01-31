@@ -1,0 +1,110 @@
+/*** NAV ICON ***/
+$button-width:  24px;
+$button-height: 18px;
+$bar-thickness: 2px;
+
+.nav-btn { position: absolute; right: 20px; top: 35px; background: transparent; border: none; border-radius: 0; cursor: pointer; z-index: 101;
+  width: $button-width; height: $button-height; transform: translateY(-50%) rotate(0deg); transition: transform 666ms ease-in-out;
+  &:focus { outline: 0; }
+  .nav-iconbar { display: block; position: absolute; height: $bar-thickness; width: 100%; background: $dkbrown; opacity: 1; left: 0; top: 0;
+    transform: rotate(0deg); transition: 0.25s ease-in-out;
+    &:nth-child(1) { top: 0; }
+    &:nth-child(2),
+    &:nth-child(3) { top: 9px; }
+    &:nth-child(4) { top: 18px; }
+  }
+  &.open {
+    .nav-iconbar {
+      &:nth-child(1) { top: 12px; opacity: 0; }
+      &:nth-child(2) { transform: rotate(-45deg); transition-delay: .3s; }
+      &:nth-child(3) { transform: rotate(45deg); transition-delay: .3s; }
+      &:nth-child(4) { top: 12px; opacity: 0; }
+    }
+  }
+}
+
+/*** NAVIGATION & HEADER STYLES ***/
+.header {
+  .header-container { height: 75px; position: relative;
+    .navbar { z-index: 100;
+      &.bg-light { background: $white !important; }
+
+      .navbar-brand { width: 65vw;
+        .header-logo { width: 100%; }
+      }
+      .navbar-nav { font-family: 'mr-eaves-xl-modern', sans-serif; font-weight: 700; font-size: 16px; text-transform: uppercase;
+
+        .menu-item {
+          .nav-link { color: $dkbrown;
+            &:hover { color: $orange; }
+          }
+          &.current-menu-item {
+            a { color: $orange; }
+          }
+        }
+
+
+      }
+    }
+  }
+}
+
+
+/*
+Extra small devices (portrait phones, less than 576px)
+No media query...Bootstrap default
+*/
+
+/*** SMALL DEVICES : Landscape phones, 576px + ***/
+@media (min-width: 576px){
+
+}
+
+/*** IPHONE X : Landscape ***/
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+  .header {
+    .header-container {
+      .navbar {
+        .navbar-brand { width: 40vw; }
+      }
+    }
+  }
+}
+
+/*** MEDIUM DEVICES : Tablets, 768px + ***/
+@media (min-width: 768px){
+
+}
+
+/*** LARGE DEVICES : Desktops, 992px and up ***/
+@media (min-width: 992px){
+  .nav-btn { display: none; }
+  .header { height: 80px;
+    .header-container { height: 100%;
+      .navbar { padding: 0; align-items: stretch; height: 100%;
+        .navbar-expand-lg { align-items: stretch; }
+        .navbar-brand { width: 350px; margin-left: 20px; }
+        .navbar-nav   { font-size: 1.1em; font-weight: 400; height: 100%; display: flex; align-items: stretch;
+          .menu-item { display: flex; align-items: center;
+            &.rust-btn { color: $white; background: transparent url('../images/rust-bg.jpg') no-repeat center center; font-weight: 700;
+              .nav-link { color: $white; padding-left: 1.75rem; padding-right: 1.75rem; }
+            }
+            .nav-link { padding-left: 1.25rem; padding-right: 1.25rem; }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+/*** EXTRA LARGE DEVICES : Large Desktops, 1200px + ***/
+@media (min-width: 1200px){
+
+}
+
+
+/*
+:::::::::: CUSTOM MEDIA QUERIES IF NEEDED ::::::::::
+*/

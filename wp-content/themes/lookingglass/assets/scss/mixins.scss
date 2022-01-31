@@ -1,0 +1,21 @@
+@import 'bourbon/bourbon';
+
+@function tint($color, $percentage){
+  @return mix(white, $color, $percentage);
+}
+
+@function shade($color, $percentage){
+  @return mix(black, $color, $percentage);
+}
+
+@mixin headings($x,$y) {
+  @for $i from 1 through 6 {
+    h#{$i} {
+      font-size: $x + $y * (6 - $i);
+      margin-top: 0;
+      margin-bottom: ($x + $y * (6 - $i)) / 2;
+      font-weight: normal;
+      line-height: ($x + $y * (6 - $i)) * 1.1;
+    }
+  }
+}
