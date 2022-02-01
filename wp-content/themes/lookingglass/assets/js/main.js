@@ -26,7 +26,7 @@ $(document).ready(function(){
 
   $('#mailto').val('info@livelookingglass.com, info@lennar.com');
 
-  $('input.contact-radio').change(function(){
+  $('input.builder-radio').change(function(){
     var emailTo = $(this).attr('data-mailto');
     $('#mailto').val(emailTo);
   });
