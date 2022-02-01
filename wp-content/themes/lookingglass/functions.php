@@ -200,7 +200,18 @@ if(function_exists('register_sidebar')){
 		'after_widget'	=>	'</div>',
 		'before_title'	=>	'<h3>',
 		'after_title'	=>	'</h3>'
-		));
+	));
+
+	register_sidebar(array(
+		'name'			      =>	__('Homepage Popup', 'homepage-popup'),
+		'description'	    =>	__('Displays a popup message on the homepage', 'homepage-popup'),
+		'id'			        =>	'homepage-popup',
+		'class'			      =>	'popup-content',
+		'before_widget'	  =>	'<div class="homepage-alert">',
+		'after_widget'	  =>	'</div>',
+		'before_title'	  =>	'',
+		'after_title'	    =>	''
+	));
 }
 
 // Add Class to Images posted on pages

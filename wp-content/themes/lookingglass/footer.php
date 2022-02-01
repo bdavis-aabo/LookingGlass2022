@@ -17,6 +17,8 @@
     </section>
   </footer>
 
+	<?php if(is_front_page()): get_template_part('home/home-popup'); endif; ?>
+
   <?php wp_footer(); ?>
 
   <?php if(is_page('location')): ?>

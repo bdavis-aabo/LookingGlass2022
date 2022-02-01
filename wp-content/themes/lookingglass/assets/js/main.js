@@ -30,7 +30,30 @@ $(document).ready(function(){
     var emailTo = $(this).attr('data-mailto');
     $('#mailto').val(emailTo);
   });
+
+	// Function to display homepage lightbox popup
+	function displayLightbox(){
+		$('html body').addClass('is-active');
+		$('#homepagePopup').addClass('is-active');
+	}
+	function closeLightbox(){
+		$('html body').removeClass('is-active');
+		$('#homepagePopup').removeClass('is-active');
+	}
+
+	if(window.location.pathname === '/'){
+    setTimeout(function(){
+      displayLightbox();
+    }, 5000);
+  }
+
+	$('.closePopup').click(function(){
+		closeLightbox();
+	});
+
 });
+
+
 
 
 // Init AOS
@@ -68,7 +91,7 @@ $('a[href*="#"]')
           } else {
             $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
             $target.focus(); // Set focus again
-          };
+          }
         });
       }
     }
