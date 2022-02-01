@@ -162,12 +162,12 @@ body, html { overflow-y: auto;
 
 .homepage-popup { position: fixed; left: 0; top: 0; right: 0; bottom: 0; z-index: 999; background: rgba($black, .85); transform: translateY(100%); opacity: 0;
 	transition: all 666ms linear;
-	.popup-window { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: auto; background: $white; padding: 30px;
+	.popup-window { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: auto; background: $white; padding: 30px 5px 5px;
 		.closePopup { position: absolute; right: 10px; top: 10px; background: transparent; border: none; color: $black; cursor: pointer; font-size: 36px;
 			&:focus { outline: none !important; }
 		}
 		.homepage-alert {
-
+			figure { margin-bottom: 0; }
 		}
 	}
 	&.is-active { transform: translateY(0); opacity: 1; }
