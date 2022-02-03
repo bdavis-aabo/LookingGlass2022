@@ -116,6 +116,49 @@ body, html { overflow-y: auto;
     .wagon-wheel { max-width: 150px; }
     p  { font-size: 1.1em; line-height: 1.85em; }
   }
+
+	// HOA PAGE STYLES
+	&.hoa-content-section { background: $white url('../images/homes-bg.jpg') no-repeat center top; display: flex; flex-wrap: wrap; justify-content: center;
+		align-items: center;
+		.content-container { flex-basis: 85%; display: flex; flex-wrap: wrap; justify-content: space-between;; align-items: flex-start;
+			.hoa-content-left { flex-basis: 65%;
+				p { font-size: 18px; line-height: 32px; }
+
+				.hoa-tab-container {
+					.nav-tabs { border-bottom: 0;
+						.nav-item { margin-right: 8px;
+							.nav-link { color: $white; background: $orange; font-family: $bold; font-size: 18px; border: none; padding: .75rem 1rem;
+								&.active { background: $white; color: $orange; }
+							}
+						}
+					}
+					.tab-content { padding: 1.5rem 1rem;
+						.tab-pane {
+							h2 { color: $orange; font-size: 28px; margin-bottom: 10px; }
+							ul { margin: 1rem; padding: 0 0 0 1.5rem;
+								li { padding: 5px 0; font-size: 18px;
+									a { color: $orange; }
+								}
+							}
+						}
+					}
+				}
+			}
+			.hoa-content-right { flex-basis: 30%;
+				.hoa-board,
+				.hoa-contact {
+					.sidebar-title { font-size: 26px; }
+					ul { font-size: 18px;
+						li { padding: 5px 0; }
+					}
+					p { line-height: 24px;
+						a { color: $orange; }
+					}
+				}
+
+			}
+		}
+	}
 }
 
 .footer { display: flex; flex-wrap: wrap; justify-content: center; padding: 4vh 0 0;
