@@ -49,6 +49,7 @@ $ltgray:           tint($black,80);
   &.orange-btn { background: $orange; color: $white;
     &:hover    { background: shade($orange,20); }
   }
+	&.outline-btn { border: 1px solid $white; color: $white; padding: 8px 25px; }
 }
 
 

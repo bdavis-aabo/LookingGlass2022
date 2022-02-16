@@ -1,0 +1,102 @@
+@import 'design';
+
+// Mapbox Styles
+.page-section {
+	&.location-map-container { padding: 0;
+		#map { min-height: 80vh; width: 100%; }
+		.map-menu { display: none; }
+	}
+}
+
+.mapboxgl-popup { max-width: 350px !important;
+	.mapboxgl-popup-close-button { font-size: 32px; color: $white; right: -25px; }
+	.mapboxgl-popup-tip { border-top-color: #e68050 }
+	.mapboxgl-popup-content { border-radius: 0; padding: 15px 10px 10px; background: #e68050; text-align: center; color: $white;
+	}
+}
+
+
+
+/*** SMALL DEVICES : Landscape phones, 576px + ***/
+@media (min-width: 576px){
+
+}
+
+/*** IPHONE X : Landscape ***/
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+}
+
+/*** MEDIUM DEVICES : Tablets, 768px + ***/
+@media (min-width: 768px){
+	.page-section {
+		&.location-map-container { display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+			#map { order: 1; }
+			.map-menu { display: block; order: 0; font-family: 'mr-eaves-xl-modern'; font-weight: 600; text-transform: uppercase;
+				display: flex; flex-wrap: nowrap; justify-content: center; flex-basis: 100%; flex-grow: 1; background: $dkorange;
+				.menu-link { color: $white; background: $dkorange; padding: 12px 15px; display: flex; flex-wrap: nowrap; align-items: center;
+					&::before { display: none; }
+				}
+
+
+		}
+	}
+}
+
+/*** LARGE DEVICES : Desktops, 992px and up ***/
+@media (min-width: 992px){
+	.page-section {
+		&.location-map-container { padding: 0; position: relative;
+			#map { min-height: 850px; width: 100%; }
+			.map-menu {
+				.menu-link { padding: 12px 25px; }
+				#grocery-btn {
+					&::before { content: ''; display: inline-flex; height: 32px; width: 32px; margin-right: 10px;
+						background: url('../images/map-icons/grocery.svg') no-repeat left top; background-size: contain; }
+				}
+				#coffee-btn {
+					&::before { content: ''; display: inline-flex; height: 32px; width: 32px; margin-right: 10px;
+						background: url('../images/map-icons/coffee.svg') no-repeat left top; background-size: contain; }
+				}
+				#shopping-btn {
+					&::before { content: ''; display: inline-flex; height: 32px; width: 32px; margin-right: 10px;
+						background: url('../images/map-icons/shopping.svg') no-repeat left top; background-size: contain; }
+				}
+				#dining-btn {
+					&::before { content: ''; display: inline-flex; height: 32px; width: 32px; margin-right: 10px;
+						background: url('../images/map-icons/dining.svg') no-repeat left top; background-size: contain; }
+				}
+				#trails-btn {
+					&::before { content: ''; display: inline-flex; height: 32px; width: 32px; margin-right: 10px;
+						background: url('../images/map-icons/trails.svg') no-repeat left top; background-size: contain; }
+				}
+				#parks-btn {
+					&::before { content: ''; display: inline-flex; height: 32px; width: 32px; margin-right: 10px;
+						background: url('../images/map-icons/parks.svg') no-repeat left top; background-size: contain; }
+				}
+				#schools-btn {
+					&::before { content: ''; display: inline-flex; height: 32px; width: 32px; margin-right: 10px;
+						background: url('../images/map-icons/schools.svg') no-repeat left top; background-size: contain; }
+				}
+				#medical-btn {
+					&::before { content: ''; display: inline-flex; height: 32px; width: 32px; margin-right: 10px;
+						background: url('../images/map-icons/hospitals.svg') no-repeat left top; background-size: contain; }
+				}
+			}
+			}
+		}
+	}
+	.mapboxgl-popup { max-width: 400px !important;
+		.mapboxgl-popup-close-button { right: 0px; }
+	}
+}
+
+/*** EXTRA LARGE DEVICES : Large Desktops, 1200px + ***/
+@media (min-width: 1200px){
+
+}
+
+/*
+:::::::::: CUSTOM MEDIA QUERIES IF NEEDED ::::::::::
+*/

@@ -332,45 +332,7 @@ No media query...Bootstrap default
       }
     }
 
-    &.location-map-container { padding: 0; position: relative;
-      #map { min-height: 750px; width: 100%; }
-      .map-menu { position: absolute; right: 10px; top: 10px; font-family: 'mr-eaves-xl-modern'; font-weight: 600; text-transform: uppercase;
-        display: flex; flex-wrap: wrap; justify-content: flex-start; width: 275px;
-        .menu-link { flex-grow: 1; flex-basis: 100%; color: $white; background: $dkorange; padding: 12px; display: flex; flex-wrap: nowrap; align-items: center; }
-        #grocery-btn {
-          &::before { content: ''; display: inline-flex; height: 32px; width: 32px; margin-right: 10px;
-            background: url('../images/map-icons/grocery.svg') no-repeat left top; background-size: contain; }
-        }
-        #coffee-btn {
-          &::before { content: ''; display: inline-flex; height: 32px; width: 32px; margin-right: 10px;
-            background: url('../images/map-icons/coffee.svg') no-repeat left top; background-size: contain; }
-        }
-        #shopping-btn {
-          &::before { content: ''; display: inline-flex; height: 32px; width: 32px; margin-right: 10px;
-            background: url('../images/map-icons/shopping.svg') no-repeat left top; background-size: contain; }
-        }
-        #dining-btn {
-          &::before { content: ''; display: inline-flex; height: 32px; width: 32px; margin-right: 10px;
-            background: url('../images/map-icons/dining.svg') no-repeat left top; background-size: contain; }
-        }
-        #trails-btn {
-          &::before { content: ''; display: inline-flex; height: 32px; width: 32px; margin-right: 10px;
-            background: url('../images/map-icons/trails.svg') no-repeat left top; background-size: contain; }
-        }
-        #parks-btn {
-          &::before { content: ''; display: inline-flex; height: 32px; width: 32px; margin-right: 10px;
-            background: url('../images/map-icons/parks.svg') no-repeat left top; background-size: contain; }
-        }
-        #schools-btn {
-          &::before { content: ''; display: inline-flex; height: 32px; width: 32px; margin-right: 10px;
-            background: url('../images/map-icons/schools.svg') no-repeat left top; background-size: contain; }
-        }
-        #medical-btn {
-          &::before { content: ''; display: inline-flex; height: 32px; width: 32px; margin-right: 10px;
-            background: url('../images/map-icons/hospitals.svg') no-repeat left top; background-size: contain; }
-        }
-      }
-    }
+
 
     &.news-content-section { flex-wrap: wrap;
       .news-container { display: flex; flex-wrap: wrap; justify-content: space-between; flex-basis: 80%;

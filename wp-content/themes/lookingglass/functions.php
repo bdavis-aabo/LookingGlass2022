@@ -78,6 +78,14 @@ function wpt_register_css(){
     filemtime(get_stylesheet_directory().'/assets/css/updates.min.css'),
     'all'
   );
+	wp_enqueue_style(
+		'map.min',
+		get_template_directory_uri() . '/assets/css/map.min.css',
+		array(),
+		filemtime(get_stylesheet_directory().'/assets/css/map.min.css'),
+		'all'
+	);
+
 }
 add_action('init','wpt_register_js');
 add_action('wp_enqueue_scripts', 'wpt_register_css');
