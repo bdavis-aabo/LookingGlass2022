@@ -332,10 +332,42 @@ var nav = new mapboxgl.NavigationControl();
 map.addControl(nav, 'bottom-right');
 
 // Zoom & Pan when menu-btn is clicked
-//$('.map-menu .menu-link').click(function(){
-//	var target = $(this).attr('id');
-//	console.log(target);
-//});
+$('.map-menu .menu-link').click(function(){
+	var target = $(this).attr('id');
+	if(target === 'grocery-btn'){
+		map.fitBounds([
+			[-104.848,39.5202],[-104.715,39.446]
+		]);
+	} else if(target === 'coffee-btn'){
+		map.fitBounds([
+			[-104.822,39.5448],[-104.720,39.4542]
+		]);
+	} else if(target === 'shopping-btn'){
+		map.fitBounds([
+			[-104.940,39.5957],[-104.573,39.3403]
+		]);
+	} else if(target === 'dining-btn'){
+		map.fitBounds([
+			[-104.916,39.5359],[-104.704,39.3734]
+		]);
+	} else if(target === 'trails-btn'){
+		map.fitBounds([
+			[-104.911,39.530],[-104.721,39.4046]
+		]);
+	} else if(target === 'parks-btn'){
+		map.fitBounds([
+			[-104.913,39.5332],[-104.678,39.3577]
+		]);
+	} else if(target === 'schools-btn'){
+		map.fitBounds([
+			[-104.829,39.5056],[-104.680,39.3925]
+		]);
+	} else if(target === 'medical-btn'){
+		map.fitBounds([
+			[-104.905, 39.5662],[-104.726, 39.4542]
+		]);
+	}
+});
 
 if($(window).innerWidth() < 728){
   map.scrollZoom.disable();
