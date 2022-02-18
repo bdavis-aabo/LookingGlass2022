@@ -45,7 +45,7 @@ $ltgray:           tint($black,80);
 .orange-bg { background: $orange; color: $white; }
 
 // BUTTONS
-.btn { border-radius: 0; border: none; box-shadow: none; font-family: 'mr-eaves-xl-modern', sans-serif; font-weight: 700; font-style: normal; text-transform: uppercase; transition: all 666ms ease-in-out;
+.btn { border-radius: 0; border: none; box-shadow: none; font-family: 'mr-eaves-xl-modern', sans-serif; font-weight: 700; font-style: normal; text-transform: uppercase; transition: all 666ms ease-in-out; font-display: fallback;
   &.orange-btn { background: $orange; color: $white;
     &:hover    { background: shade($orange,20); }
   }
@@ -55,20 +55,21 @@ $ltgray:           tint($black,80);
 
 // BASE STYLES
 body { font-family: $regular, serif; font-size: $base-font-size; line-height: $line-height; color: $dkgray;
-  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-display: fallback;
   @include headings($base-font-size, $heading-scale);
 
   @for $i from 1 through 6 {
     h#{$i} {
       font-family: $bold;
       color: $dkbrown;
-      em { font-family: $bold-italic; }
+			font-display: fallback;
+      em { font-family: $bold-italic; font-display: fallback; }
     }
   }
-  strong { font-family: $bold;
-    em { font-family: $bold-italic; font-weight: normal; }
+  strong { font-family: $bold; font-display: fallback;
+    em { font-family: $bold-italic; font-weight: normal; font-display: fallback; }
   }
-  em { font-family: $italic; font-size: 1.1em; }
+  em { font-family: $italic; font-size: 1.1em; font-display: fallback; }
   p  { margin: 0 0 1.3em; }
   a  { transition: all 666ms ease;
     &:hover { text-decoration: none; }

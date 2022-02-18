@@ -29,7 +29,7 @@ body, html { overflow-y: auto;
         .page-sub-image { flex-basis: 95%; float: none; margin: 0;
           .alignleft { margin-top: 0px; }
         }
-        .page-sub-text { align-self: flex-end; font-size: 2em; font-family: 'joanna-bolditalic', serif; color: $dkbrown; flex-basis: 80%;
+        .page-sub-text { align-self: flex-end; font-size: 2em; font-display: fallback; color: $dkbrown; flex-basis: 80%;
           p { line-height: 1.85em; text-align: center; width: 100%; }
         }
       }
@@ -68,7 +68,7 @@ body, html { overflow-y: auto;
           .model-name,
           .model-details { font-size: 1em; margin-bottom: 8px;  }
           .model-name {
-            strong { font-size: 1.25em; text-transform: uppercase; font-family: 'mr-eaves-xl-modern'; color: $orange; }
+            strong { font-size: 1.25em; text-transform: uppercase; font-family: 'mr-eaves-xl-modern', sans-serif; font-display: fallback; font-display: fallback; font-display: fallback; font-display: fallback; color: $orange; }
           }
         }
       }
@@ -93,7 +93,7 @@ body, html { overflow-y: auto;
   &.location-information { padding-bottom: 0;
     .stats-container { display: flex; flex-basis: 80%; flex-wrap: wrap; justify-content: center;
       .stat { flex-basis: 65%; text-align: center; margin-bottom: 45px;
-        .counting { font-family: 'insignia'; font-size: 4em; margin-bottom: 15px; }
+        .counting { font-family: 'insignia', serif; font-display: fallback; font-size: 4em; margin-bottom: 15px; }
         h4 { color: $white; font-size: 1em; font-weight: normal; }
         &:last-child { margin-bottom: 0; }
       }
@@ -105,14 +105,14 @@ body, html { overflow-y: auto;
       .news-article { margin-bottom: 30px; text-align: center; flex-basis: 95%;
         .post-image { margin-bottom: 15px; }
         .article-date { font-size: 1.2em; margin-bottom: 8px; }
-        .article-title { font-family: 'mr-eaves-xl-modern'; text-transform: uppercase; margin-bottom: 8px; }
+        .article-title { font-family: 'mr-eaves-xl-modern', sans-serif; font-display: fallback; font-display: fallback; text-transform: uppercase; margin-bottom: 8px; }
       }
     }
   }
 
   .page-content { text-align: center; flex-basis: 80%;
     h2 { font-size: 36px; line-height: 40px; }
-    h3 { font-size: 28px; font-family: 'mr-eaves-xl-modern', sans-serif; color: $orange; text-transform: uppercase; }
+    h3 { font-size: 28px; font-family: 'mr-eaves-xl-modern', sans-serif; font-display: fallback; font-display: fallback; color: $orange; text-transform: uppercase; }
     .wagon-wheel { max-width: 150px; }
     p  { font-size: 1.1em; line-height: 1.85em; }
   }
@@ -166,11 +166,11 @@ body, html { overflow-y: auto;
     .footer-contact { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; text-align: center; flex-grow: 1;
       flex-basis: 100%;
       div.wpcf7 { width: 100%;
-        h2.orange-txt { font-family: 'mr-eaves-xl-modern', sans-serif; font-weight: 400; font-size: 1.75em; text-transform: uppercase; }
+        h2.orange-txt { font-family: 'mr-eaves-xl-modern', sans-serif; font-display: fallback; font-display: fallback; font-weight: 400; font-size: 1.75em; text-transform: uppercase; }
         p { font-size: 1.1em; }
         .form-group { display: flex; flex-wrap: wrap; justify-content: space-between; margin: 0;
           .one-half { flex-basis: 100%; margin-bottom: 20px;
-            .form-control { border-radius: 0; font-family: 'mr-eaves-xl-modern', sans-serif; font-weight: 700; color: $dkbrown; text-transform: uppercase;
+            .form-control { border-radius: 0; font-family: 'mr-eaves-xl-modern', sans-serif; font-display: fallback; font-display: fallback; font-weight: 700; color: $dkbrown; text-transform: uppercase;
               &::placeholder { color: $dkbrown; }
             }
           }
@@ -189,7 +189,7 @@ body, html { overflow-y: auto;
       font-weight: 400; flex-basis: 100%; display: flex; flex-wrap: wrap; justify-content: space-between;
       .footer-directions { flex-grow: 1; flex-basis: 100%; text-transform: uppercase;
         em {
-          strong { font-family: 'mr-eaves-xl-modern'; font-style: italic; font-weight: 700; }
+          strong { font-family: 'mr-eaves-xl-modern', sans-serif; font-display: fallback; font-style: italic; font-weight: 700; }
         }
       }
     }
@@ -198,7 +198,7 @@ body, html { overflow-y: auto;
     background: transparent url('../images/footerwood-bg.jpg') no-repeat center top; text-align: center;
     .white-txt,
     .copyright { flex-basis: 100%; flex-grow: 1; }
-    .white-txt { font-family: 'mr-eaves-xl-modern'; text-transform: uppercase; font-size: 1.25em; font-weight: 700; text-shadow: 0 0 8px rgba($black, .5); }
+    .white-txt { font-family: 'mr-eaves-xl-modern', sans-serif; font-display: fallback; text-transform: uppercase; font-size: 1.25em; font-weight: 700; text-shadow: 0 0 8px rgba($black, .5); }
     .copyright { font-size: .95em; text-shadow: 0 0 8px rgba($black, .5); font-weight: bold; }
   }
 }
@@ -255,7 +255,7 @@ No media query...Bootstrap default
           .page-sub-image { flex-basis: 50%; float: none; margin: 0;
             .alignleft { margin-top: 50px; }
           }
-          .page-sub-text { align-self: flex-end; font-size: 2em; font-family: 'joanna-bolditalic', serif; color: $dkbrown; flex-basis: 40%;
+          .page-sub-text { align-self: flex-end; font-size: 2em; font-display: fallback; color: $dkbrown; flex-basis: 40%;
             p { line-height: 1.85em; text-align: center; }
           }
         }
@@ -264,7 +264,7 @@ No media query...Bootstrap default
 
     .page-content { text-align: center; flex-basis: 45%;
       h2 { font-size: 48px; line-height: 52px; }
-      h3 { font-size: 28px; font-family: 'mr-eaves-xl-modern', sans-serif; color: $orange; text-transform: uppercase; }
+      h3 { font-size: 28px; font-family: 'mr-eaves-xl-modern', sans-serif; font-display: fallback; font-display: fallback; color: $orange; text-transform: uppercase; }
       .wagon-wheel { max-width: 150px; }
       p  { font-size: 1.1em; line-height: 1.85em; }
     }
@@ -283,7 +283,7 @@ No media query...Bootstrap default
     &.homes-content-section {
       .page-subcontent-container { width: 100%; display: flex; flex-wrap: wrap; justify-content: center;
         .page-subcontent { padding: 5vh 0 2.5vh; text-align: center; border-top: 2px solid $orange; flex-basis: 45%;
-          h3 { color: $orange; font-family: 'mr-eaves-xl-modern'; font-size: 1.8em; text-transform: uppercase; }
+          h3 { color: $orange; font-family: 'mr-eaves-xl-modern', sans-serif; font-size: 1.8em; text-transform: uppercase; }
           p  { font-size: 1.1em; }
         }
       }
@@ -358,11 +358,11 @@ No media query...Bootstrap default
       .footer-contact { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; text-align: center; flex-grow: 1;
         flex-basis: 100%;
         div.wpcf7 { width: 100%;
-          h2.orange-txt { font-family: 'mr-eaves-xl-modern', sans-serif; font-weight: 400; font-size: 1.75em; text-transform: uppercase; }
+          h2.orange-txt { font-family: 'mr-eaves-xl-modern', sans-serif; font-display: fallback; font-display: fallback; font-display: fallback; font-weight: 400; font-size: 1.75em; text-transform: uppercase; }
           p { font-size: 1.1em; }
           .form-group { display: flex; flex-wrap: nowrap; justify-content: space-between; margin: 0 0 20px;
             .one-half { flex-basis: 48.5%; margin-bottom: 0;
-              .form-control { border-radius: 0; font-family: 'mr-eaves-xl-modern', sans-serif; font-weight: 700; color: $dkbrown;
+              .form-control { border-radius: 0; font-family: 'mr-eaves-xl-modern', sans-serif; font-display: fallback; font-display: fallback; font-weight: 700; color: $dkbrown;
                 text-transform: uppercase;
                 &::placeholder { color: $dkbrown; }
               }
@@ -382,7 +382,7 @@ No media query...Bootstrap default
         font-weight: 400; flex-basis: 100%; display: flex; flex-wrap: wrap; justify-content: space-between;
         .footer-directions { flex-grow: 1; flex-basis: 100%; text-transform: uppercase;
           em {
-            strong { font-family: 'mr-eaves-xl-modern'; font-style: italic; font-weight: 700; }
+            strong { font-family: 'mr-eaves-xl-modern', sans-serif; font-style: italic; font-weight: 700; }
           }
         }
       }
@@ -390,7 +390,7 @@ No media query...Bootstrap default
     .footer-message { flex-basis: 100%; display: flex; flex-wrap: wrap; justify-content: center; padding: 2vh 0 1vh; text-align: center;
       .white-txt,
       .copyright { flex-basis: 100%; flex-grow: 1; }
-      .white-txt { font-family: 'mr-eaves-xl-modern'; text-transform: uppercase; font-size: 1.5em; font-weight: 700; text-shadow: 0 0 8px rgba($black, .5); }
+      .white-txt { font-family: 'mr-eaves-xl-modern', sans-serif; font-display: fallback; text-transform: uppercase; font-size: 1.5em; font-weight: 700; text-shadow: 0 0 8px rgba($black, .5); }
       .copyright { font-size: 1.1em; text-shadow: 0 0 8px rgba($black, .5); font-weight: bold; }
     }
   }
