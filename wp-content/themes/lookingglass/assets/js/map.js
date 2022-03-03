@@ -320,7 +320,7 @@ var popup = new mapboxgl.Popup({offset: 35})
 	.setHTML(
 		'<img src="/wp-content/themes/lookingglass/assets/images/map-icons/lgPos-logo.svg" alt="Looking Glass - Parker, CO Logo" class="img-fluid">' +
 		'<br/>' +
-		'<a href="https://www.google.com/maps/dir//Broomtail+Trl,+Parker,+CO+80134/@39.4692191,-104.7899431,16.31z/data=!4m8!4m7!1m0!1m5!1m1!1s0x876c911b9e442ab5:0xfca2d0ec3e573f59!2m2!1d-104.7916899!2d39.4679855" title="Get Directions to Looking Glass" class="btn outline-btn" target="_blank">Get Directions</a>'
+		'<a href="https://www.google.com/maps/dir//39.4781926,-104.7753534/@39.5185949,-104.7964683,13z/data=!3m1!4b1!4m2!4m1!3e0" title="Get Directions to Looking Glass" class="btn outline-btn" target="_blank">Get Directions</a>'
 );
 map.on('click', 'points', function(e){
 	map.getCanvas().style.cursor = 'pointer';

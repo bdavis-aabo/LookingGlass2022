@@ -32,7 +32,7 @@ $bar-thickness: 2px;
       .navbar-brand { width: 65vw;
         .header-logo { width: 100%; }
       }
-      .navbar-nav { font-family: 'mr-eaves-xl-modern', sans-serif; font-display: fallback; font-weight: 700; font-size: 16px; text-transform: uppercase;
+      .navbar-nav { font-family: 'mr-eaves-xl-modern', sans-serif; font-display: fallback; font-display: fallback; font-weight: 700; font-size: 16px; text-transform: uppercase;
 
         .menu-item {
           .nav-link { color: $dkbrown;
