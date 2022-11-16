@@ -41,11 +41,11 @@ $(document).ready(function(){
 		$('#homepagePopup').removeClass('is-active');
 	}
 
-	if(window.location.pathname === '/'){
-    setTimeout(function(){
-      displayLightbox();
-    }, 5000);
-  }
+	// if(window.location.pathname === '/'){
+    // setTimeout(function(){
+      // displayLightbox();
+    // }, 5000);
+  // }
 
 	$('.closePopup').click(function(){
 		closeLightbox();

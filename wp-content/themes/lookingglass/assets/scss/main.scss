@@ -79,6 +79,25 @@ body, html { overflow-y: auto;
     figure { margin: 0; }
   }
 
+	&.builder-content-section { //single homebuilder page
+		.page-content {
+			.builder-introduction {
+				a { color: $orange; }
+				.office-info { font-size: 1.5em; }
+				.builder-office { font-size: 1em; }
+			}
+		}
+		.builder-collection-container { margin: 45px 0 20px; flex-basis: 80%; text-align: center; border-top: 1px solid rgba($black, .2);
+			padding-top: 45px; }
+		.builder-floorplan-container { flex-basis: 80%; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+			.floorplan { margin-bottom: 45px; text-align: center; font-size: 1.1em;
+				.floorplan-name { font-size: 1.25em; margin-bottom: 8px;
+					em { font-style: normal; color: $dkbrown; font-size: .9em; }
+				}
+			}
+		}
+	}
+
   &.lifestyle-content-section { flex-wrap: wrap; position: relative; padding-bottom: 0;
     .lifestyle-subsection { flex-basis: 100%; position: relative; padding-top: 0; display: flex; flex-wrap: wrap; padding-top: 0; justify-content: center;
       align-items: flex-start; background: $white url('../images/lifestyle-bg.jpg') no-repeat center bottom;
@@ -235,7 +254,17 @@ No media query...Bootstrap default
 
 /*** MEDIUM DEVICES : Tablets, 768px + ***/
 @media (min-width: 768px){
-
+	.page-section{
+		&.builder-content-section { //single homebuilder page
+			.builder-floorplan-container { flex-basis: 85%; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;
+				.floorplan { flex-basis: 49%; margin-bottom: 45px; text-align: center; font-size: 1.1em;
+					.floorplan-name { font-size: 1.25em; margin-bottom: 8px;
+						em { font-style: normal; color: $dkbrown; font-size: .9em; }
+					}
+				}
+			}
+		}
+	}
 }
 
 /*** LARGE DEVICES : Desktops, 992px and up ***/
@@ -310,6 +339,16 @@ No media query...Bootstrap default
         }
       }
     }
+
+		&.builder-content-section { //single homebuilder page
+			.builder-floorplan-container { flex-basis: 80%; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;
+				.floorplan { flex-basis: 49%; margin-bottom: 45px; text-align: center; font-size: 1.1em;
+					.floorplan-name { font-size: 1.25em; margin-bottom: 8px;
+						em { font-style: normal; color: $dkbrown; font-size: .9em; }
+					}
+				}
+			}
+		}
 
     &.lifestyle-content-section { flex-wrap: wrap; position: relative;
       .lifestyle-subsection { flex-basis: 100%; position: relative; padding-top: 0; display: flex; flex-wrap: wrap; padding-top: 0; justify-content: center;
