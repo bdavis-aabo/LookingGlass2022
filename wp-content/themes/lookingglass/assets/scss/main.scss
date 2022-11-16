@@ -82,7 +82,9 @@ body, html { overflow-y: auto;
 	&.builder-content-section { //single homebuilder page
 		.page-content {
 			.builder-introduction {
-				a { color: $orange; }
+				a { color: $orange;
+					&.orange-btn { color: $white; }
+				}
 				.office-info { font-size: 1.5em; }
 				.builder-office { font-size: 1em; }
 			}
