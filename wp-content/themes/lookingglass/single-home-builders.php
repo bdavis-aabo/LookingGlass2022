@@ -34,7 +34,7 @@
 					<br/>
 					<?php echo get_field('homebuilder_hours') ?>
 				</p>
-				<a href="" title="Visit <?php the_title() ?>" class="btn orange-btn" target="_blank">Visit <?php the_title() ?></a>
+				<a href="<?php echo get_field('homebuilder_link') ?>" title="Visit <?php the_title() ?>" class="btn orange-btn" target="_blank">Visit <?php the_title() ?></a>
 			</div>
     </div>
 

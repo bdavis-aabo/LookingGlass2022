@@ -26,9 +26,7 @@ $_builders->query($_args);
 					<?php echo get_field('homebuilder_short_intro') ?>
         </div>
 
-        <a href="<?php the_permalink() ?>" title="<?php the_title() ?>" class="btn orange-btn">
-          Visit <?php the_title() ?>
-        </a>
+        <a href="<?php the_permalink() ?>" title="<?php the_title() ?>" class="btn orange-btn">Learn More</a>
 
       </div>
     <?php endwhile; ?>
