@@ -23,7 +23,7 @@
 	<?php endif; ?>
 
 	<section class="page-section builder-content-section light-bg">
-    <div class="homepage-content page-content">
+    <div class="homepage-content page-content qmi-page-content">
 			<?php the_content(); ?>
 		</div>
 
